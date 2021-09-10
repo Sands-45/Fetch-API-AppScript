@@ -13,11 +13,11 @@
 	<link rel="stylesheet" href="index.css" />
 </head>
 
-<body>
+<body onload="loadData()">
 	<div class="container-fluid bg-info">
 		<div class="container vh-100 w-100">
 			<div class="row p-5">
-				<div class="col-6 bg-primary p-3 holder">
+				<div class="col-8 bg-primary p-3 holder">
 					<table id="table" class="center2 d-none">
 						<tr>
 							<th class="ps-4">ID</th>
@@ -25,6 +25,7 @@
 							<th class="ps-4">Shop</th>
 						</tr>
 					</table>
+					<!--Skeleton Preloader-->
 					<div id="skeleton" class="center2">
 						<div class="skeletonKids"></div>
 						<div class="skeletonKids"></div>
@@ -46,7 +47,7 @@
 						<div class="skeletonKids"></div>
 					</div>
 				</div>
-				<div class="col-6 p-3 bg-dark center">
+				<div class="col-4 p-3 bg-dark center">
 					<form id="postData" class="text-light">
 						<label class="d-block text-center" for="nameA">Agent Name</label>
 						<input id="nameA" name="nameA" type="text">

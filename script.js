@@ -3,6 +3,7 @@ const url =
   "https://script.google.com/macros/s/AKfycbzTC7pSZeyMloKFaGG81XCv35HxDREKK7CUIvKzAZdMOBrwkOkOmRd-H6BxYtb5NTrs/exec";
 
 //Fetch API Json Data
+function loadData(){
 fetch(url)
   .then((response) => {
     console.log(response.readyState);
@@ -35,3 +36,5 @@ fetch(url)
   .catch((error) => {
     console.log(error);
   });
+}
+

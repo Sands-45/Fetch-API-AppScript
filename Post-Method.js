@@ -1,4 +1,4 @@
-const addBtn = document.getElementById("addData");
+
 const link =
   "https://script.google.com/macros/s/AKfycbzTC7pSZeyMloKFaGG81XCv35HxDREKK7CUIvKzAZdMOBrwkOkOmRd-H6BxYtb5NTrs/exec?action=addData";
 const postData = document.getElementById("postData");
