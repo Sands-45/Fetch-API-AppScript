@@ -18,19 +18,41 @@
 		<div class="container vh-100 w-100">
 			<div class="row p-5">
 				<div class="col-6 bg-primary p-3 holder">
-					<table id="table" class="center2">
+					<table id="table" class="center2 d-none">
 						<tr>
 							<th class="ps-4">ID</th>
 							<th class="ps-4">Agent Name</th>
 							<th class="ps-4">Shop</th>
 						</tr>
 					</table>
+					<div id="skeleton" class="center2">
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+						<div class="skeletonKids"></div>
+					</div>
 				</div>
-				<div class="col-6 bg-primary">
-					<form id="postData">
-						<input id="nameA" type="text">
-						<input id="shop" type="text">
-						<button id="addData" type="submit" class="btn btn-warning center mt-3">Add Data</button>
+				<div class="col-6 p-3 bg-dark center">
+					<form id="postData" class="text-light">
+						<label class="d-block text-center" for="nameA">Agent Name</label>
+						<input id="nameA" name="nameA" type="text">
+						<label class="d-block text-center" for="shop">Shop Name</label>
+						<input id="shop" name="shop" type="text">
+						<button id="addData" type="submit" class="btn btn-primary center mt-3">Add Data</button>
 					</form>
 				</div>
 			</div>

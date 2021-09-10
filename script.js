@@ -5,6 +5,11 @@ const url =
 //Fetch API Json Data
 fetch(url)
   .then((response) => {
+    console.log(response.readyState);
+    if (response.status === 200) {
+      document.getElementById("table").classList.remove("d-none");
+      document.getElementById("skeleton").classList.add("d-none");
+    }
     return response.json();
   })
   .then((data) => {
@@ -17,9 +22,9 @@ fetch(url)
       const tdId = document.createElement("td");
       const tdName = document.createElement("td");
       const tdShop = document.createElement("td");
-	  tdId.appendChild(iD)
-	  tdName.appendChild(agentName)
-	  tdShop.appendChild(Restaurant)
+      tdId.appendChild(iD);
+      tdName.appendChild(agentName);
+      tdShop.appendChild(Restaurant);
       tr.appendChild(tdId);
       tr.appendChild(tdName);
       tr.appendChild(tdShop);
