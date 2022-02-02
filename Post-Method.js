@@ -1,6 +1,6 @@
 
 const link =
-  "https://script.google.com/macros/s/AKfycbzTC7pSZeyMloKFaGG81XCv35HxDREKK7CUIvKzAZdMOBrwkOkOmRd-H6BxYtb5NTrs/exec?action=addData";
+  "https://script.google.com/macros/s/AKfycbwuB68-q4HaoLldyWX7cat8GAIHZIbZ-V_uV_QAh9MH8WnVAhXhh7Wvyj5egmn72m02/exec";
 const postData = document.getElementById("postData");
 
 //Fetch API Posting Data
@@ -13,8 +13,8 @@ function sheetData(e) {
       "Content-type": "application/json",
     },
     body: JSON.stringify({
-      id: Math.random(10) * 10,
-      agentName: document.getElementById("nameA").value,
+      name: Math.random(10) * 10,
+     email: document.getElementById("nameA").value,
       restaurant: document.getElementById("shop").value,
     }),
   });
